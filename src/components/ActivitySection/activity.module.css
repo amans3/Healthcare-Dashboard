@@ -1,0 +1,832 @@
+.activity-section {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: rgb(248, 251, 255);
+  border-radius: 1.125rem;
+  margin-bottom: 2rem;
+  padding: 0.9rem;
+  overflow-x: auto;
+}
+
+.activity-header-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.activity-header-section-title {
+  color: rgb(0, 0, 137);
+  font-weight: 500;
+}
+
+.activity-header-section-title-sub {
+  color: rgb(205, 204, 204);
+  font-size: 0.75rem;
+}
+
+.activity-body-section {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.95rem;
+}
+
+.activity-body-section-bar-1 {
+  width: 123px;
+  height: 90px;
+  border-radius: 0.5rem;
+  background-color: rgb(235, 235, 235);
+}
+
+.activity-body-section-bar-2 {
+  width: 122px;
+  height: 45px;
+  border-radius: 0.5rem;
+  align-self: center;
+  background-color: rgb(0, 215, 215);
+}
+
+.activity-body-section-bar-group-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  justify-content: end;
+}
+
+.activity-body-section-bar-3 {
+  width: 4px;
+  height: 17px;
+  border-radius: 0.5rem;
+  background-color: rgb(235, 235, 235);
+}
+
+.activity-body-section-bar-4 {
+  width: 400px;
+  height: 25px;
+  align-self: flex-end;
+  border-radius: 0.5rem;
+  background-color: rgb(235, 235, 235);
+}
+
+.activity-body-section-bar-group-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  justify-content: end;
+}
+
+.activity-body-section-bar-5 {
+  width: 4px;
+  height: 45px;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 215, 215);
+}
+
+.activity-body-section-bar-6 {
+  width: 4px;
+  height: 45px;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 0, 137);
+}
+
+.activity-body-section-bar-7 {
+  width: 18px;
+  height: 45px;
+  border-radius: 0.5rem;
+  align-self: center;
+  background-color: rgb(0, 0, 137);
+}
+
+.activity-body-section-bar-group-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  justify-content: center;
+}
+
+.activity-body-section-bar-8 {
+  width: 24px;
+  height: 25px;
+  align-self: flex-end;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 215, 215);
+}
+
+.activity-body-section-bar-9 {
+  width: 26px;
+  height: 90px;
+  border-radius: 0.5rem;
+  background-color: rgb(235, 235, 235);
+}
+
+.activity-body-section-bar-10 {
+  width: 26px;
+  height: 45px;
+  border-radius: 0.5rem;
+  align-self: center;
+  background-color: rgb(235, 235, 235);
+}
+
+.activity-body-section-bar-group-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  justify-content: center;
+}
+
+.activity-body-section-bar-11 {
+  width: 4px;
+  height: 12px;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 215, 215);
+}
+
+.activity-body-section-bar-12 {
+  width: 4px;
+  height: 15px;
+  align-self: flex-end;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 0, 137);
+}
+
+.activity-body-section-bar-13 {
+  width: 25px;
+  height: 25px;
+  align-self: flex-end;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 215, 215);
+}
+
+.activity-body-section-bar-group-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  justify-content: end;
+}
+
+.activity-body-section-bar-14 {
+  width: 4px;
+  height: 45px;
+  border-radius: 0.5rem;
+  background-color: rgb(235, 235, 235);
+}
+
+.activity-body-section-bar-15 {
+  width: 4px;
+  height: 45px;
+  border-radius: 0.5rem;
+  background-color: rgb(235, 235, 235);
+}
+
+.activity-body-section-bar-16 {
+  width: 26px;
+  height: 25px;
+  align-self: flex-end;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 0, 137);
+}
+
+.activity-body-section-bar-17 {
+  width: 36px;
+  height: 45px;
+  align-self: center;
+  border-radius: 0.5rem;
+  background-color: rgb(235, 235, 235);
+}
+
+.activity-footer-section {
+  display: flex;
+  gap: 0.025rem;
+  justify-content: space-evenly;
+}
+.activity-footer-section-week {
+  font-size: 0.75rem;
+  color: rgb(218, 218, 218);
+}
+
+/* 
+  Device = Tablets, Ipads (portrait)
+  Screen = 768px to 1024px
+*/
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .activity-body-section {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.95rem;
+  }
+
+  .activity-body-section-bar-1 {
+    width: 18px;
+    height: 90px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-2 {
+    width: 16px;
+    height: 45px;
+    border-radius: 0.5rem;
+    align-self: center;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-group-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    justify-content: end;
+  }
+
+  .activity-body-section-bar-3 {
+    width: 8px;
+    height: 17px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-4 {
+    width: 14px;
+    height: 25px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-group-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    justify-content: end;
+  }
+
+  .activity-body-section-bar-5 {
+    width: 8px;
+    height: 45px;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-6 {
+    width: 8px;
+    height: 45px;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .activity-body-section-bar-7 {
+    width: 12px;
+    height: 45px;
+    border-radius: 0.5rem;
+    align-self: center;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .activity-body-section-bar-group-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    justify-content: center;
+  }
+
+  .activity-body-section-bar-8 {
+    width: 12px;
+    height: 25px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-9 {
+    width: 12px;
+    height: 90px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-10 {
+    width: 12px;
+    height: 45px;
+    border-radius: 0.5rem;
+    align-self: center;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-group-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    justify-content: center;
+  }
+
+  .activity-body-section-bar-11 {
+    width: 4px;
+    height: 12px;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-12 {
+    width: 4px;
+    height: 15px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .activity-body-section-bar-13 {
+    width: 14px;
+    height: 25px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-group-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    justify-content: end;
+  }
+
+  .activity-body-section-bar-14 {
+    width: 8px;
+    height: 45px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-15 {
+    width: 8px;
+    height: 45px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-16 {
+    width: 12px;
+    height: 25px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .activity-body-section-bar-17 {
+    width: 16px;
+    height: 45px;
+    align-self: center;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-footer-section {
+    display: flex;
+    gap: 0.025rem;
+    justify-content: space-evenly;
+  }
+  .activity-footer-section-week {
+    font-size: 0.75rem;
+    color: rgb(218, 218, 218);
+  }
+}
+
+/* 
+  Device = Low Resolution Tablets / Mobiles (Portrait)
+  Screen = 320px to 479px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .activity-section {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(248, 251, 255);
+    border-radius: 1.125rem;
+
+    padding: 0.9rem;
+    overflow-x: auto;
+  }
+
+  .activity-header-section {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .activity-header-section-title {
+    color: rgb(0, 0, 137);
+    font-weight: 500;
+    font-size: 0.85rem;
+  }
+
+  .activity-header-section-title-sub {
+    color: rgb(205, 204, 204);
+    font-size: 0.75rem;
+    line-break: auto;
+  }
+
+  .activity-body-section {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 0.3rem;
+    margin-top: 0.25rem;
+  }
+
+  .activity-body-section-bar-1 {
+    width: 9px;
+    height: 90px;
+    border-radius: 0.5rem;
+    background-color: rgb(211, 211, 211);
+  }
+
+  .activity-body-section-bar-2 {
+    width: 6px;
+    height: 45px;
+    border-radius: 0.5rem;
+    align-self: center;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-group-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    justify-content: end;
+  }
+
+  .activity-body-section-bar-3 {
+    width: 6px;
+    height: 17px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-4 {
+    width: 6px;
+    height: 25px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-group-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    justify-content: end;
+  }
+
+  .activity-body-section-bar-5 {
+    width: 4px;
+    height: 45px;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-6 {
+    width: 4px;
+    height: 45px;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .activity-body-section-bar-7 {
+    width: 6px;
+    height: 45px;
+    border-radius: 0.5rem;
+    align-self: center;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .activity-body-section-bar-group-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    justify-content: center;
+  }
+
+  .activity-body-section-bar-8 {
+    width: 6px;
+    height: 25px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-9 {
+    width: 8px;
+    height: 90px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-10 {
+    width: 8px;
+    height: 45px;
+    border-radius: 0.5rem;
+    align-self: center;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-group-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    justify-content: center;
+  }
+
+  .activity-body-section-bar-11 {
+    width: 4px;
+    height: 12px;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-12 {
+    width: 4px;
+    height: 15px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .activity-body-section-bar-13 {
+    width: 8px;
+    height: 25px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-group-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    justify-content: end;
+  }
+
+  .activity-body-section-bar-14 {
+    width: 4px;
+    height: 45px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-15 {
+    width: 4px;
+    height: 45px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-16 {
+    width: 8px;
+    height: 25px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .activity-body-section-bar-17 {
+    width: 7px;
+    height: 45px;
+    align-self: center;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-footer-section {
+    display: flex;
+    gap: 0.125rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .activity-footer-section-week {
+    font-size: 0.75rem;
+    color: rgb(218, 218, 218);
+  }
+}
+
+/* 
+  Device = Smartphones / Mobiles (Portrait)
+  Screen = 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .activity-section {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(248, 251, 255);
+    border-radius: 1.125rem;
+
+    padding: 0.9rem;
+    overflow-x: auto;
+  }
+
+  .activity-header-section {
+    display: flex;
+    gap: 6rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .activity-header-section-title {
+    color: rgb(0, 0, 137);
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+
+  .activity-header-section-title-sub {
+    color: rgb(205, 204, 204);
+    font-size: 0.575rem;
+  }
+
+  .activity-body-section {
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.45rem;
+    margin-top: 0.25rem;
+  }
+
+  .activity-body-section-bar-1 {
+    width: 24px;
+    height: 90px;
+    border-radius: 0.5rem;
+    background-color: rgb(211, 211, 211);
+  }
+
+  .activity-body-section-bar-2 {
+    width: 22px;
+    height: 45px;
+    border-radius: 0.5rem;
+    align-self: center;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-group-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    justify-content: end;
+  }
+
+  .activity-body-section-bar-3 {
+    width: 4px;
+    height: 17px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-4 {
+    width: 20px;
+    height: 25px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-group-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    justify-content: end;
+  }
+
+  .activity-body-section-bar-5 {
+    width: 4px;
+    height: 45px;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-6 {
+    width: 4px;
+    height: 45px;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .activity-body-section-bar-7 {
+    width: 18px;
+    height: 45px;
+    border-radius: 0.5rem;
+    align-self: center;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .activity-body-section-bar-group-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    justify-content: center;
+  }
+
+  .activity-body-section-bar-8 {
+    width: 24px;
+    height: 25px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-9 {
+    width: 26px;
+    height: 90px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-10 {
+    width: 26px;
+    height: 45px;
+    border-radius: 0.5rem;
+    align-self: center;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-group-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    justify-content: center;
+  }
+
+  .activity-body-section-bar-11 {
+    width: 4px;
+    height: 12px;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-12 {
+    width: 4px;
+    height: 15px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .activity-body-section-bar-13 {
+    width: 25px;
+    height: 25px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .activity-body-section-bar-group-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    justify-content: end;
+  }
+
+  .activity-body-section-bar-14 {
+    width: 4px;
+    height: 45px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-15 {
+    width: 4px;
+    height: 45px;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-body-section-bar-16 {
+    width: 26px;
+    height: 25px;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .activity-body-section-bar-17 {
+    width: 36px;
+    height: 45px;
+    align-self: center;
+    border-radius: 0.5rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .activity-footer-section {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+  .activity-footer-section-week {
+    font-size: 0.75rem;
+    color: rgb(218, 218, 218);
+  }
+}

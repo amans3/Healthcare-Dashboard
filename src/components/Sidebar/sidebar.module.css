@@ -1,0 +1,215 @@
+.sidebar {
+  width: 12rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background-color: rgb(248, 251, 255);
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sidebar-header {
+  font-weight: normal;
+  font-size: 0.85rem;
+  color: rgb(210, 204, 204);
+}
+
+.sidebar-navigation {
+  display: flex;
+  background-color: rgb(248, 251, 255);
+  height: 100%;
+  gap: 1rem;
+  padding-block: 1.25rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-settings {
+  position: absolute;
+  bottom: 0.25rem;
+}
+
+.sidebar-navigation-item {
+  display: flex;
+  height: 2rem;
+  width: 100%;
+  gap: 1rem;
+  background-color: rgb(248, 251, 255);
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.sidebar-navigation-item:last-child {
+  margin-bottom: 1.25rem;
+}
+
+.sidebar-navigation-item-icon-svg {
+  width: 1rem;
+  height: 1rem;
+  color: rgb(180, 180, 180);
+}
+
+.sidebar-navigation-item-icon-svg-active {
+  color: rgb(20, 20, 118);
+  fill: rgb(20, 20, 118);
+  stroke-width: 0.02rem;
+}
+
+.sidebar-navigation-item-title {
+  font-size: 0.85rem;
+  color: rgb(180, 180, 180);
+}
+
+.sidebar-navigation-item-title-active {
+  color: rgb(20, 20, 118);
+}
+
+/* 
+  Device = Tablets, Ipads (portrait)
+  Screen = 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sidebar {
+    width: 10rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(248, 251, 255);
+    /* background-color: bisque; */
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+/* 
+  Device = Low Resolution Tablets / Mobiles (Portrait)
+  Screen = 320px to 479px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .sidebar {
+    width: 6rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(248, 251, 255);
+    /* background-color: bisque; */
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .sidebar-navigation-item {
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    gap: 1rem;
+    background-color: rgb(248, 251, 255);
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .sidebar-navigation-item:last-child {
+    margin-bottom: 1.25rem;
+  }
+
+  .sidebar-navigation-item-icon-svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: rgb(180, 180, 180);
+  }
+
+  .sidebar-navigation-item-icon-svg-active {
+    color: rgb(20, 20, 118);
+    fill: rgb(20, 20, 118);
+    stroke-width: 0.02rem;
+  }
+
+  .sidebar-navigation-item-title {
+    font-size: 0.85rem;
+    color: rgb(180, 180, 180);
+    display: none;
+  }
+
+  .sidebar-navigation-item-title-active {
+    color: rgb(20, 20, 118);
+  }
+  .sidebar-settings {
+    position: absolute;
+    bottom: 0.25rem;
+    left: 2.5rem;
+  }
+}
+
+/* 
+  Device = Smartphones / Mobiles (Portrait)
+  Screen = 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .sidebar {
+    width: 4rem;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    box-sizing: border-box;
+    background-color: rgb(248, 251, 255);
+    /* background-color: bisque; */
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .sidebar-header {
+    font-weight: normal;
+    font-size: 0.75rem;
+    color: rgb(210, 204, 204);
+  }
+
+  .sidebar-navigation-item {
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    gap: 1rem;
+    background-color: rgb(248, 251, 255);
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .sidebar-navigation-item:last-child {
+    margin-bottom: 1.25rem;
+  }
+
+  .sidebar-navigation-item-icon-svg {
+    width: 1rem;
+    height: 1rem;
+    color: rgb(180, 180, 180);
+  }
+
+  .sidebar-navigation-item-icon-svg-active {
+    color: rgb(20, 20, 118);
+    fill: rgb(20, 20, 118);
+    stroke-width: 0.02rem;
+  }
+
+  .sidebar-navigation-item-title {
+    font-size: 0.85rem;
+    color: rgb(180, 180, 180);
+    display: none;
+  }
+
+  .sidebar-navigation-item-title-active {
+    color: rgb(20, 20, 118);
+  }
+  .sidebar-settings {
+    position: absolute;
+    bottom: 0.25rem;
+    left: 1.5rem;
+  }
+}

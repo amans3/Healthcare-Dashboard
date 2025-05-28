@@ -1,0 +1,272 @@
+.health-status-card {
+  width: 100%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background-color: rgb(248, 251, 255);
+  border: 1px solid rgb(248, 251, 255);
+  border-radius: 0.75rem;
+  box-shadow: 0 0 2px 1px rgb(248, 251, 255);
+}
+
+.health-status-card-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.health-status-card-header-png {
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+}
+
+.health-status-card-header-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(0, 0, 137);
+}
+
+.health-status-card-date {
+  font-size: 0.7rem;
+  color: rgb(210, 210, 210);
+}
+
+.health-status-card-progress-bar {
+  position: relative;
+  width: 70%;
+  height: 8px;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(223, 234, 255);
+  background-color: rgb(233, 242, 253);
+}
+
+.health-status-card-progress-bar::after {
+  position: absolute;
+  content: "";
+  height: 8px;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 30%;
+  background-color: rgb(218, 236, 255);
+  border: 1px solid rgb(248, 251, 255);
+  border-color: rgb(248, 251, 255);
+  border-radius: 0.5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  z-index: 4;
+}
+
+/* 
+  Device = Tablets, Ipads (portrait)
+  Screen = 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .health-status-card {
+    width: 100%;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background-color: rgb(248, 251, 255);
+    border: 1px solid rgb(248, 251, 255);
+    border-radius: 0.75rem;
+    box-shadow: 0 0 2px 1px rgb(248, 251, 255);
+  }
+
+  .health-status-card-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .health-status-card-header-png {
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+  }
+
+  .health-status-card-header-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 137);
+  }
+
+  .health-status-card-date {
+    font-size: 0.7rem;
+    color: rgb(210, 210, 210);
+  }
+
+  .health-status-card-progress-bar {
+    position: relative;
+    width: 70%;
+    height: 8px;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(223, 234, 255);
+    background-color: rgb(233, 242, 253);
+  }
+
+  .health-status-card-progress-bar::after {
+    position: absolute;
+    content: "";
+    height: 8px;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 30%;
+    background-color: rgb(218, 236, 255);
+    border: 1px solid rgb(248, 251, 255);
+    border-color: rgb(248, 251, 255);
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    z-index: 4;
+  }
+}
+
+/* 
+  Device = Low Resolution Tablets / Mobiles (Portrait)
+  Screen = 320px to 479px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .health-status-card {
+    width: 100%;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background-color: rgb(248, 251, 255);
+    border: 1px solid rgb(248, 251, 255);
+    border-radius: 0.75rem;
+    box-shadow: 0 0 2px 1px rgb(248, 251, 255);
+  }
+
+  .health-status-card-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .health-status-card-header-png {
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+  }
+
+  .health-status-card-header-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 137);
+  }
+
+  .health-status-card-date {
+    font-size: 0.7rem;
+    color: rgb(210, 210, 210);
+  }
+
+  .health-status-card-progress-bar {
+    position: relative;
+    width: 70%;
+    height: 8px;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(223, 234, 255);
+    background-color: rgb(233, 242, 253);
+  }
+
+  .health-status-card-progress-bar::after {
+    position: absolute;
+    content: "";
+    height: 8px;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 30%;
+    background-color: rgb(218, 236, 255);
+    border: 1px solid rgb(248, 251, 255);
+    border-color: rgb(248, 251, 255);
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    z-index: 4;
+  }
+}
+
+/* 
+  Device = Smartphones / Mobiles (Portrait)
+  Screen = 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .health-status-card {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background-color: rgb(248, 251, 255);
+    border: 1px solid rgb(248, 251, 255);
+    border-radius: 0.75rem;
+    box-shadow: 0 0 2px 1px rgb(248, 251, 255);
+  }
+  .health-status-card-header {
+    display: flex;
+    gap: 6rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .health-status-card-header-png {
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+  }
+
+  .health-status-card-header-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgb(0, 0, 137);
+  }
+
+  .health-status-card-date {
+    font-size: 0.57rem;
+    color: rgb(210, 210, 210);
+  }
+
+  .health-status-card-progress-bar {
+    position: relative;
+    width: 70%;
+    height: 8px;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(223, 234, 255);
+    background-color: rgb(233, 242, 253);
+  }
+
+  .health-status-card-progress-bar::after {
+    position: absolute;
+    content: "";
+    height: 8px;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 30%;
+    background-color: rgb(218, 236, 255);
+    border: 1px solid rgb(248, 251, 255);
+    border-color: rgb(248, 251, 255);
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    z-index: 4;
+  }
+}

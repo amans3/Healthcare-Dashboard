@@ -1,0 +1,1459 @@
+.dashboard-main-content {
+  width: calc(100% - 12rem);
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(248, 251, 255);
+}
+
+.dashboard-first-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-grow: 1;
+  padding-inline: 2rem;
+  background-color: white;
+  width: 27rem;
+}
+
+.dashboard-first-main-content-header-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  background: white;
+  align-items: center;
+}
+
+.dashboard-first-main-content-title {
+  color: rgb(2, 2, 169);
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.dashboard-first-main-content-sub-title {
+  color: rgb(2, 2, 169);
+  font-size: 0.75rem;
+  align-self: top;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.dashboard-first-main-content-sub-title-icon {
+  color: gray;
+  height: 0.75rem;
+  width: 0.75rem;
+  align-self: end;
+}
+
+.dashboard-first-main-content-body-section {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.dashboard-first-main-content-body-image-section {
+  position: relative;
+  height: 400px;
+  width: 290px;
+  mix-blend-mode: multiply;
+  background-color: white;
+  border-radius: 0.75rem;
+}
+
+.dashboard-first-main-content-body-image {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dashboard-first-main-content-body-image-icon {
+  position: absolute;
+  height: 1.25rem;
+  width: 1.25rem;
+  top: 2rem;
+  right: 1rem;
+  color: gray;
+}
+
+.body-image-heart-status-card {
+  width: fit-content;
+  height: 30px;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  position: absolute;
+  right: -3%;
+  top: 25%;
+  font-size: 0.75rem;
+  background-color: rgb(0, 0, 137);
+}
+
+.body-image-heart-status-card-icon {
+  height: 0.95rem;
+  width: 0.95rem;
+  fill: red;
+  stroke: red;
+}
+
+.body-image-heart-status-card-title {
+  color: white;
+}
+
+.body-image-leg-status-card {
+  width: fit-content;
+  height: 30px;
+  padding: 1rem 0.85rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  font-size: 0.75rem;
+  background-color: rgb(0, 215, 215);
+}
+
+.body-image-leg-status-card-img {
+  height: 0.95rem;
+  width: 0.95rem;
+}
+
+.body-image-leg-status-card-title {
+  color: rgb(2, 2, 169);
+}
+
+.dashboard-first-main-content-body-cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: white;
+  flex: 1;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.dashboard-first-main-content-body-bottom-sub {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  margin-top: 1rem;
+  color: rgb(2, 2, 169);
+  font-size: 0.75rem;
+  align-self: top;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.dashboard-first-main-content-body-bottom-sub-icon {
+  color: rgb(2, 2, 169);
+  height: 0.75rem;
+  width: 0.75rem;
+  align-self: last baseline;
+}
+
+.dashboard-second-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.0025rem;
+  flex-grow: 1;
+  width: 17rem;
+  padding-inline: 1rem;
+  background-color: rgb(248, 251, 255);
+}
+
+.dashboard-second-main-content-calendar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dashboard-second-main-content-calendar-title-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem;
+  margin: 0.25rem 0;
+}
+
+.dashboard-second-main-content-calendar-title {
+  color: rgb(2, 2, 169);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.dashboard-second-main-content-calendar-title-section-icon-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.dashboard-second-main-content-calendar-section-title-icon {
+  color: rgb(2, 2, 169);
+  height: 1rem;
+  width: 1rem;
+  stroke-width: 12%;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid {
+  display: grid;
+  color: rgb(2, 2, 169);
+  position: relative;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid > .dayOfWeek,
+.dashboard-second-main-content-calendar-section-calendar-grid > .timeOfWeek {
+  font-size: 0.7rem;
+  padding-block: 0.125rem;
+  font-weight: 500;
+  color: rgb(2, 2, 118);
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid
+  > .timeOfWeek
+  > .minus-icon {
+  color: rgb(186, 186, 186);
+  stroke-width: 0.1rem;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid
+  > .timeOfWeek.highlighted {
+  color: rgb(255, 255, 255);
+  z-index: 4;
+  position: relative;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid > .dayOfWeek.fade,
+.dashboard-second-main-content-calendar-section-calendar-grid
+  > .timeOfWeek.fade {
+  font-size: 0.7rem;
+  padding-block: 0.125rem;
+  font-weight: 500;
+  color: gray;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid > .dateOfWeek {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid
+  > .dateOfWeek.fade {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: gray;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid
+  > .bg-fade-layout {
+  position: absolute;
+  grid-area: 1 / 2 / -1 / 3;
+  height: 90%;
+  width: 70px;
+  background-color: rgba(184, 215, 255, 0.2);
+  border-radius: 0.75rem;
+  z-index: 1;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid > .capsule-1 {
+  position: absolute;
+  grid-area: 6 / 2 / 7 / 3;
+  height: 23px;
+  width: 50px;
+  background-color: rgb(0, 0, 137);
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid > .capsule-2 {
+  position: absolute;
+  grid-area: 6 / 4 / 7 / 5;
+  height: 23px;
+  width: 50px;
+  background-color: rgb(145, 145, 228);
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid > .dot-1 {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  grid-area: 6 / 4 / 7 / 5;
+  height: 4px;
+  width: 4px;
+  margin-bottom: 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid > .capsule-3 {
+  position: absolute;
+  grid-area: 5 / 6 / 6 / 8;
+  height: 25px;
+  width: 120px;
+  background-color: rgb(145, 145, 228);
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid > .dot-2 {
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  transform: translateX(-50%);
+  grid-area: 5 / 6 / 6 / 8;
+  height: 4px;
+  width: 4px;
+  margin-bottom: 1px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.dashboard-second-main-content-calendar-section-calendar-grid > .dot-3 {
+  position: absolute;
+  bottom: 10%;
+  right: 22%;
+  transform: translateX(-50%);
+  grid-area: 5 / 6 / 6 / 8;
+  height: 4px;
+  width: 4px;
+  margin-bottom: 1px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.dashboard-second-main-content-current-appointment-section {
+  display: grid;
+  width: 100%;
+  gap: 0.75rem;
+  padding: 1rem 0.5rem;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-second-main-content-schedule-title {
+  color: rgb(2, 2, 132);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.dashboard-second-main-content-schedule-sub-title {
+  color: rgb(161, 161, 161);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.dashboard-second-main-content-appointment-card-section {
+  display: grid;
+  width: 100%;
+  gap: 0.75rem;
+  padding: 1rem 0.5rem;
+  grid-template-columns: repeat(2, auto);
+}
+
+/* @media (min-width: 1025px) and (max-width: 1280px) {
+  .dashboard-main-content {
+    width: calc(100% - 10rem);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 251, 255);
+  }
+  .dashboard-first-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+    padding-inline: 2rem;
+    background-color: white;
+    width: 100%;
+  }
+  .dashboard-second-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.0025rem;
+    flex-grow: 1;
+    width: 100%;
+    padding-inline: 1rem;
+    background-color: rgb(248, 251, 255);
+  }
+
+  .dashboard-second-main-content-calendar-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+
+  .dashboard-second-main-content-calendar-title-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.25rem;
+    margin: 0.25rem 0;
+  }
+
+  .dashboard-second-main-content-calendar-title {
+    color: rgb(2, 2, 169);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .dashboard-second-main-content-calendar-title-section-icon-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .dashboard-second-main-content-calendar-section-title-icon {
+    color: rgb(2, 2, 169);
+    height: 1.25rem;
+    width: 1.25rem;
+    stroke-width: 12%;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid {
+    display: grid;
+    gap: 0.025rem;
+    color: rgb(2, 2, 169);
+    position: relative;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dayOfWeek,
+  .dashboard-second-main-content-calendar-section-calendar-grid > .timeOfWeek {
+    font-size: 1.25rem;
+    padding-block: 0.125rem;
+    font-weight: 500;
+    color: rgb(2, 2, 118);
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek
+    > .minus-icon {
+    color: rgb(186, 186, 186);
+    stroke-width: 0.1rem;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek.highlighted {
+    color: rgb(255, 255, 255);
+    z-index: 4;
+    position: relative;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .dayOfWeek.fade,
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek.fade {
+    font-size: 1.25rem;
+    padding-block: 0.125rem;
+    font-weight: 500;
+    color: gray;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dateOfWeek {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .dateOfWeek.fade {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: gray;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .bg-fade-layout {
+    position: absolute;
+    grid-area: 1 / 2 / -1 / 3;
+    height: 95%;
+    width: 95px;
+    background-color: rgba(184, 215, 255, 0.2);
+    border-radius: 0.75rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .capsule-1 {
+    position: absolute;
+    grid-area: 6 / 2 / 7 / 3;
+    height: 30px;
+    width: 65px;
+    background-color: rgb(0, 0, 137);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .capsule-2 {
+    position: absolute;
+    grid-area: 6 / 4 / 7 / 5;
+    height: 30px;
+    width: 63px;
+    background-color: rgb(145, 145, 228);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dot-1 {
+    position: absolute;
+    bottom: 0.25;
+    left: 50%;
+    transform: translateX(-50%);
+    grid-area: 6 / 4 / 7 / 5;
+    height: 4px;
+    width: 4px;
+    margin-bottom: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .capsule-3 {
+    position: absolute;
+    grid-area: 5 / 6 / 6 / 8;
+    height: 55px;
+    width: 215px;
+    background-color: rgb(145, 145, 228);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dot-2 {
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    transform: translateX(-50%);
+    grid-area: 5 / 6 / 6 / 8;
+    height: 4px;
+    width: 4px;
+    margin-bottom: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dot-3 {
+    position: absolute;
+    bottom: 10%;
+    right: 22%;
+    transform: translateX(-50%);
+    grid-area: 5 / 6 / 6 / 8;
+    height: 4px;
+    width: 4px;
+    margin-bottom: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .dashboard-second-main-content-current-appointment-section {
+    display: grid;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 1rem 0.5rem;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 0.5rem;
+  }
+
+  .dashboard-second-main-content-schedule-title {
+    color: rgb(2, 2, 132);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .dashboard-second-main-content-schedule-sub-title {
+    color: rgb(161, 161, 161);
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+
+  .dashboard-second-main-content-appointment-card-section {
+    display: grid;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 1rem 0.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+} */
+
+/* 
+  Device = Tablets, Ipads (portrait)
+  Screen = 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .dashboard-main-content {
+    width: calc(100% - 10rem);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 251, 255);
+  }
+  .dashboard-first-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+    padding-inline: 2rem;
+    background-color: white;
+    width: 100%;
+  }
+  .dashboard-second-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.0025rem;
+    flex-grow: 1;
+    width: 100%;
+    padding-inline: 1rem;
+    background-color: rgb(248, 251, 255);
+  }
+
+  .dashboard-second-main-content-calendar-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+
+  .dashboard-second-main-content-calendar-title-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.25rem;
+    margin: 0.25rem 0;
+  }
+
+  .dashboard-second-main-content-calendar-title {
+    color: rgb(2, 2, 169);
+    font-size: 1.0125rem;
+    font-weight: 600;
+  }
+
+  .dashboard-second-main-content-calendar-title-section-icon-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .dashboard-second-main-content-calendar-section-title-icon {
+    color: rgb(2, 2, 169);
+    height: 1.25rem;
+    width: 1.25rem;
+    stroke-width: 12%;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid {
+    display: grid;
+    gap: 0.025rem;
+    color: rgb(2, 2, 169);
+    position: relative;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dayOfWeek,
+  .dashboard-second-main-content-calendar-section-calendar-grid > .timeOfWeek {
+    font-size: 1rem;
+    padding-block: 0.125rem;
+    font-weight: 500;
+    color: rgb(2, 2, 118);
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek
+    > .minus-icon {
+    color: rgb(186, 186, 186);
+    stroke-width: 0.1rem;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek.highlighted {
+    color: rgb(255, 255, 255);
+    z-index: 4;
+    position: relative;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .dayOfWeek.fade,
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek.fade {
+    font-size: 1rem;
+    padding-block: 0.125rem;
+    font-weight: 500;
+    color: gray;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek.fade {
+    font-size: 1.25rem;
+    padding-block: 0.125rem;
+    font-weight: 500;
+    color: gray;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dateOfWeek {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .dateOfWeek.fade {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: gray;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .bg-fade-layout {
+    position: absolute;
+    grid-area: 1 / 2 / -1 / 3;
+    height: 95%;
+    width: 85px;
+    background-color: rgba(184, 215, 255, 0.2);
+    border-radius: 0.75rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .capsule-1 {
+    position: absolute;
+    grid-area: 6 / 2 / 7 / 3;
+    height: 30px;
+    width: 65px;
+    background-color: rgb(0, 0, 137);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .capsule-2 {
+    position: absolute;
+    grid-area: 6 / 4 / 7 / 5;
+    height: 27px;
+    width: 60px;
+    background-color: rgb(145, 145, 228);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dot-1 {
+    position: absolute;
+    bottom: 0.25;
+    left: 50%;
+    transform: translateX(-50%);
+    grid-area: 6 / 4 / 7 / 5;
+    height: 4px;
+    width: 4px;
+    margin-bottom: 0.05px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .capsule-3 {
+    position: absolute;
+    grid-area: 5 / 6 / 6 / 8;
+    height: 35px;
+    width: 155px;
+    background-color: rgb(145, 145, 228);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dot-2 {
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    transform: translateX(-50%);
+    grid-area: 5 / 6 / 6 / 8;
+    height: 4px;
+    width: 4px;
+    margin-bottom: 0.5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dot-3 {
+    position: absolute;
+    bottom: 10%;
+    right: 22%;
+    transform: translateX(-50%);
+    grid-area: 5 / 6 / 6 / 8;
+    height: 4px;
+    width: 4px;
+    margin-bottom: 0.5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .dashboard-second-main-content-current-appointment-section {
+    display: grid;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 1rem 0.5rem;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 0.5rem;
+  }
+
+  .dashboard-second-main-content-schedule-title {
+    color: rgb(2, 2, 132);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .dashboard-second-main-content-schedule-sub-title {
+    color: rgb(161, 161, 161);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .dashboard-second-main-content-appointment-card-section {
+    display: grid;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 1rem 0.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* 
+  Device = Low Resolution Tablets / Mobiles (Portrait)
+  Screen = 320px to 479px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .dashboard-main-content {
+    width: calc(100% - 6rem);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 251, 255);
+  }
+  .dashboard-first-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+    padding-inline: 2rem;
+    background-color: white;
+    width: 100%;
+  }
+
+  .dashboard-first-main-content-title {
+    color: rgb(2, 2, 169);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+  }
+
+  .dashboard-second-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex-grow: 1;
+    width: 100%;
+    padding-inline: 1rem;
+    background-color: rgb(248, 251, 255);
+  }
+
+  .dashboard-second-main-content-calendar-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+
+  .dashboard-second-main-content-calendar-title-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.25rem;
+    margin: 0.25rem 0;
+  }
+
+  .dashboard-second-main-content-calendar-title {
+    color: rgb(2, 2, 169);
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .dashboard-second-main-content-calendar-title-section-icon-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .dashboard-second-main-content-calendar-section-title-icon {
+    color: rgb(2, 2, 169);
+    height: 1rem;
+    width: 1rem;
+    stroke-width: 12%;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid {
+    display: grid;
+    gap: 0.025rem;
+    color: rgb(2, 2, 169);
+    position: relative;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dayOfWeek,
+  .dashboard-second-main-content-calendar-section-calendar-grid > .timeOfWeek {
+    font-size: 0.7rem;
+    padding-block: 0.125rem;
+    font-weight: 500;
+    color: rgb(2, 2, 118);
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek
+    > .minus-icon {
+    color: rgb(186, 186, 186);
+    stroke-width: 0.1rem;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek.highlighted {
+    color: rgb(255, 255, 255);
+    z-index: 4;
+    position: relative;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .dayOfWeek.fade,
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek.fade {
+    font-size: 0.7rem;
+    padding-block: 0.125rem;
+    font-weight: 500;
+    color: gray;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dateOfWeek {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .dateOfWeek.fade {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: gray;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .bg-fade-layout {
+    position: absolute;
+    grid-area: 1 / 2 / -1 / 3;
+    height: 90%;
+    width: 55px;
+    background-color: rgba(184, 215, 255, 0.2);
+    border-radius: 0.75rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .capsule-1 {
+    position: absolute;
+    grid-area: 6 / 2 / 7 / 3;
+    height: 25px;
+    width: 40px;
+    background-color: rgb(0, 0, 137);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .capsule-2 {
+    position: absolute;
+    grid-area: 6 / 4 / 7 / 5;
+    height: 25px;
+    width: 40px;
+    background-color: rgb(145, 145, 228);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dot-1 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    grid-area: 6 / 4 / 7 / 5;
+    height: 4px;
+    width: 4px;
+    margin-bottom: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .capsule-3 {
+    position: absolute;
+    grid-area: 5 / 6 / 6 / 8;
+    height: 30px;
+    width: 120px;
+    background-color: rgb(145, 145, 228);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dot-2 {
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    transform: translateX(-50%);
+    grid-area: 5 / 6 / 6 / 8;
+    height: 4px;
+    width: 4px;
+    margin-bottom: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dot-3 {
+    position: absolute;
+    bottom: 10%;
+    right: 22%;
+    transform: translateX(-50%);
+    grid-area: 5 / 6 / 6 / 8;
+    height: 4px;
+    width: 4px;
+    margin-bottom: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .dashboard-second-main-content-current-appointment-section {
+    display: grid;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 1rem 0.5rem;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 0.5rem;
+  }
+
+  .dashboard-second-main-content-schedule-title {
+    color: rgb(2, 2, 132);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .dashboard-second-main-content-schedule-sub-title {
+    color: rgb(161, 161, 161);
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .dashboard-second-main-content-appointment-card-section {
+    display: grid;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 1rem 0.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* 
+  Device = Smartphones / Mobiles (Portrait)
+  Screen = 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .dashboard-main-content {
+    width: calc(100% - 6rem);
+    display: flex;
+    gap: 0.1rem;
+    flex-direction: column;
+    background-color: rgb(248, 251, 255);
+  }
+
+  /* ************************ */
+
+  .dashboard-first-main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-inline: 1rem;
+    background-color: white;
+    width: 100%;
+  }
+
+  .dashboard-first-main-content-header-section {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: space-between;
+    background: white;
+    align-items: center;
+  }
+
+  .dashboard-first-main-content-title {
+    color: rgb(2, 2, 169);
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+  }
+
+  .dashboard-first-main-content-sub-title {
+    color: rgb(2, 2, 169);
+    font-size: 0.75rem;
+    align-self: top;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+  }
+
+  .dashboard-first-main-content-sub-title-icon {
+    color: gray;
+    height: 0.75rem;
+    width: 0.75rem;
+    align-self: end;
+  }
+
+  .dashboard-first-main-content-body-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.025rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .dashboard-first-main-content-body-image-section {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    /* border: 1px solid saddlebrown; */
+    mix-blend-mode: multiply;
+    background-color: white;
+    border-radius: 0.75rem;
+  }
+
+  .dashboard-first-main-content-body-image {
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .dashboard-first-main-content-body-image-icon {
+    position: absolute;
+    height: 1.25rem;
+    width: 1.25rem;
+    top: 2rem;
+    right: 1rem;
+    color: gray;
+  }
+
+  .body-image-heart-status-card {
+    width: fit-content;
+    height: 23px;
+    padding: 0.75rem 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    position: absolute;
+    right: -3%;
+    top: 25%;
+    font-size: 0.75rem;
+    background-color: rgb(0, 0, 137);
+  }
+
+  .body-image-heart-status-card-icon {
+    height: 0.75rem;
+    width: 0.75rem;
+    fill: red;
+    stroke: red;
+  }
+
+  .body-image-heart-status-card-title {
+    color: white;
+  }
+
+  .body-image-leg-status-card {
+    width: fit-content;
+    height: 23px;
+    padding: 0.75rem 0.85rem;
+    border-radius: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    font-size: 0.75rem;
+    background-color: rgb(0, 215, 215);
+  }
+
+  .body-image-leg-status-card-img {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+
+  .body-image-leg-status-card-title {
+    color: rgb(2, 2, 169);
+  }
+
+  .dashboard-first-main-content-body-cards-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    background-color: white;
+    flex: 1;
+    padding: 0.5em;
+    border-radius: 0.75rem;
+  }
+
+  .dashboard-first-main-content-body-bottom-sub {
+    position: absolute;
+    bottom: -1rem;
+    right: 1rem;
+    margin-top: 3rem;
+    color: rgb(2, 2, 169);
+    font-size: 0.75rem;
+    align-self: top;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+  }
+
+  .dashboard-first-main-content-body-bottom-sub-icon {
+    color: rgb(2, 2, 169);
+    height: 0.65rem;
+    width: 0.65rem;
+    align-self: baseline;
+  }
+
+  /* ************************ */
+
+  .dashboard-second-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex-grow: 1;
+    width: 100%;
+    padding-inline: 1rem;
+    background-color: rgb(248, 251, 255);
+  }
+
+  .dashboard-second-main-content-calendar-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+
+  .dashboard-second-main-content-calendar-title-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.25rem;
+    margin: 0.25rem 0;
+  }
+
+  .dashboard-second-main-content-calendar-title {
+    color: rgb(2, 2, 169);
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .dashboard-second-main-content-calendar-title-section-icon-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .dashboard-second-main-content-calendar-section-title-icon {
+    color: rgb(2, 2, 169);
+    height: 0.75rem;
+    width: 0.75rem;
+    stroke-width: 12%;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid {
+    display: grid;
+    gap: 0.025rem;
+    color: rgb(2, 2, 169);
+    position: relative;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dayOfWeek,
+  .dashboard-second-main-content-calendar-section-calendar-grid > .timeOfWeek {
+    font-size: 0.47rem;
+    padding-block: 0.125rem;
+    font-weight: 500;
+    color: rgb(2, 2, 118);
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek
+    > .minus-icon {
+    color: rgb(186, 186, 186);
+    stroke-width: 0.1rem;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek.highlighted {
+    color: rgb(255, 255, 255);
+    z-index: 4;
+    position: relative;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .dayOfWeek.fade,
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .timeOfWeek.fade {
+    font-size: 0.4rem;
+    padding-block: 0.125rem;
+    font-weight: 500;
+    color: gray;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dateOfWeek {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .dateOfWeek.fade {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: gray;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid
+    > .bg-fade-layout {
+    position: absolute;
+    grid-area: 1 / 2 / -1 / 3;
+    height: 80%;
+    width: 30px;
+    background-color: rgba(184, 215, 255, 0.2);
+    border-radius: 0.75rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .capsule-1 {
+    position: absolute;
+    grid-area: 6 / 2 / 7 / 3;
+    height: 25px;
+    width: 30px;
+    background-color: rgb(0, 0, 137);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .capsule-2 {
+    position: absolute;
+    grid-area: 6 / 4 / 7 / 5;
+    height: 25px;
+    width: 35px;
+    background-color: rgb(145, 145, 228);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dot-1 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    grid-area: 6 / 4 / 7 / 5;
+    height: 4px;
+    width: 4px;
+    margin-bottom: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .capsule-3 {
+    position: absolute;
+    grid-area: 5 / 6 / 6 / 8;
+    height: 25px;
+    width: 60px;
+    background-color: rgb(145, 145, 228);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dot-2 {
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    transform: translateX(-50%);
+    grid-area: 5 / 6 / 6 / 8;
+    height: 4px;
+    width: 4px;
+    margin-bottom: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .dashboard-second-main-content-calendar-section-calendar-grid > .dot-3 {
+    position: absolute;
+    bottom: 10%;
+    right: 22%;
+    transform: translateX(-50%);
+    grid-area: 5 / 6 / 6 / 8;
+    height: 4px;
+    width: 4px;
+    margin-bottom: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .dashboard-second-main-content-current-appointment-section {
+    display: grid;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 1rem 0.5rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 0.5rem;
+  }
+
+  .dashboard-second-main-content-schedule-title {
+    color: rgb(2, 2, 132);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .dashboard-second-main-content-schedule-sub-title {
+    color: rgb(161, 161, 161);
+    font-size: 0.69rem;
+    font-weight: 400;
+  }
+
+  .dashboard-second-main-content-appointment-card-section {
+    display: grid;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 1rem 0.5rem;
+    grid-template-columns: 1fr;
+  }
+}

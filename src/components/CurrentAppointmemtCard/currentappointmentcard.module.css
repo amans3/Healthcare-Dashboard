@@ -1,0 +1,192 @@
+.current-appointment-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem 1.1rem;
+  background-color: rgb(0, 0, 137);
+  box-shadow: 0 0 2px 1px rgb(211, 230, 255);
+  border-radius: 1.75rem;
+  width: fit-content;
+  box-shadow: 0 0 2px 0px rgb(0, 0, 137);
+}
+
+.current-appointment-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.current-appointment-card-header-title {
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.current-appointment-card-header-img {
+  height: 1.5rem;
+  width: 1.85rem;
+  background-color: transparent;
+}
+
+.current-appointment-card-body {
+  color: white;
+  font-size: 0.75rem;
+}
+
+.current-appointment-card-footer {
+  color: white;
+  font-size: 0.75rem;
+}
+
+/* 
+  Device = Tablets, Ipads (portrait)
+  Screen = 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .current-appointment-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 1.1rem;
+    background-color: rgb(0, 0, 137);
+    box-shadow: 0 0 2px 1px rgb(211, 230, 255);
+    border-radius: 1.75rem;
+    width: fit-content;
+    box-shadow: 0 0 2px 0px rgb(0, 0, 137);
+  }
+
+  .current-appointment-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .current-appointment-card-header-title {
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .current-appointment-card-header-img {
+    height: 1.5rem;
+    width: 1.85rem;
+    background-color: transparent;
+  }
+
+  .current-appointment-card-body {
+    color: white;
+    font-size: 0.85rem;
+  }
+
+  .current-appointment-card-footer {
+    color: white;
+    font-size: 0.85rem;
+  }
+}
+
+/* 
+  Device = Low Resolution Tablets / Mobiles (Portrait)
+  Screen = 320px to 479px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .current-appointment-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 1.1rem;
+    background-color: rgb(0, 0, 137);
+    box-shadow: 0 0 2px 1px rgb(211, 230, 255);
+    border-radius: 1.75rem;
+    width: fit-content;
+    box-shadow: 0 0 2px 0px rgb(0, 0, 137);
+  }
+
+  .current-appointment-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .current-appointment-card-header-title {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .current-appointment-card-header-img {
+    height: 1.25rem;
+    width: 1.5rem;
+    background-color: transparent;
+  }
+
+  .current-appointment-card-body {
+    color: white;
+    font-size: 0.7rem;
+  }
+
+  .current-appointment-card-footer {
+    color: white;
+    font-size: 0.7rem;
+  }
+}
+
+/* 
+  Device = Smartphones / Mobiles (Portrait)
+  Screen = 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .current-appointment-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 1.1rem;
+    background-color: rgb(0, 0, 137);
+    box-shadow: 0 0 2px 1px rgb(211, 230, 255);
+    border-radius: 1.75rem;
+    width: auto;
+    box-shadow: 0 0 2px 0px rgb(0, 0, 137);
+  }
+
+  .current-appointment-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .current-appointment-card-header-title {
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 500;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .current-appointment-card-header-img {
+    height: 1rem;
+    width: 1.25rem;
+    background-color: transparent;
+  }
+
+  .current-appointment-card-body {
+    color: white;
+    font-size: 0.65rem;
+  }
+
+  .current-appointment-card-footer {
+    color: white;
+    font-size: 0.65rem;
+  }
+}
