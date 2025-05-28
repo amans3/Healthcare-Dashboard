@@ -2,7 +2,7 @@
 import styles from "./nextappointmentcard.module.css";
 
 export function NextAppointmentCard({ nextAppointmentData }) {
-    console.log(nextAppointmentData)
+    
   return (
     <>
       <div className={styles["next-appointment-card"]}>

@@ -1,8 +1,6 @@
-
 import styles from "./appointmentcard.module.css";
 
 export function AppointmentCard({ appointmentData }) {
-    console.log(appointmentData)
   return (
     <>
       <div className={styles["appointment-card"]}>
@@ -11,11 +9,15 @@ export function AppointmentCard({ appointmentData }) {
             {appointmentData.appointment}
           </div>
           <div className={styles["appointment-card-header-img-wrapper"]}>
-           <img src={appointmentData.icon} alt={appointmentData.appointment} className={styles["appointment-card-header-img"]}  />
+            <img
+              src={appointmentData.icon}
+              alt={appointmentData.appointment}
+              className={styles["appointment-card-header-img"]}
+            />
           </div>
         </div>
         <div className={styles["appointment-card-body"]}>
-            {appointmentData.time}
+          {appointmentData.time}
         </div>
       </div>
     </>

@@ -2,7 +2,7 @@ import { useCallback, useEffect } from "react";
 import styles from "./healthcard.module.css";
 
 export function HealthStatusCard({ healthStatusCard }) {
-  console.log(healthStatusCard);
+
 
   return (
     <div className={styles["health-status-card"]}>

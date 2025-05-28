@@ -2,7 +2,7 @@
 import styles from "./currentappointmentcard.module.css";
 
 export function CurrentAppointmentCard({ currentAppointmentData }) {
-    console.log(currentAppointmentData)
+   
   return (
     <>
       <div className={styles["current-appointment-card"]}>
